@@ -1,0 +1,4 @@
+{
+  "name": "monorepo-react",
+  "packageManager": "yarn@4.0.2"
+}
