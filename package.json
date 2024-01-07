@@ -1,4 +1,16 @@
 {
   "name": "monorepo-react",
-  "packageManager": "yarn@4.0.2"
+  "packageManager": "yarn@4.0.2",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "start:storybook": "yarn workspace storybook storybook",
+    "start:client": "yarn workspace storybook dev"
+  }
 }
