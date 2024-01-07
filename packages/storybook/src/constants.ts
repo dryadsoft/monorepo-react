@@ -39,3 +39,11 @@ export enum ButtonLabelColor {
   primary = "text-btn-label-primary",
   secondary = "text-btn-label-secondary",
 }
+
+export enum JustifyContent {
+  start = "justify-start",
+  center = "justify-center",
+  end = "justify-end",
+  around = "justify-around",
+  between = "justify-between",
+}
