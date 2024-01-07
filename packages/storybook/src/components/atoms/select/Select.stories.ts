@@ -6,6 +6,7 @@ const meta = {
   component: Select,
   parameters: {
     layout: "centered",
+    controls: { exclude: ["children", "className"] },
   },
   tags: ["autodocs"],
   argTypes: {

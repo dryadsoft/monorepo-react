@@ -6,6 +6,7 @@ const meta = {
   component: Flex,
   parameters: {
     layout: "full",
+    controls: { exclude: ["children", "className"] },
   },
   tags: ["autodocs"],
   argTypes: {
