@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { Select } from "./Select";
+import { Option } from "../option/Option";
 
 const meta = {
   title: "atoms/Select",
@@ -19,9 +20,11 @@ type Story = StoryObj<typeof meta>;
 
 export const Country: Story = {
   args: {
-    options: [
-      { key: "jp", value: "🇯🇵" },
-      { key: "kr", value: "🇰🇷" },
-    ],
+    children: (
+      <>
+        <Option code="1" text="test1" />
+        <Option code="2" text="test2" />
+      </>
+    ),
   },
 };

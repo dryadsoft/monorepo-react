@@ -1,16 +1,13 @@
+import React from "react";
 import { cls } from "../../../utils";
 
-interface IOption {
-  key: string;
-  value: string;
-}
 interface SelectProps {
-  options: IOption[];
   className?: string;
+  children?: React.ReactNode;
   [key: string]: unknown;
 }
 
-export const Select = ({ options, className, ...rest }: SelectProps) => {
+export const Select = ({ className, children, ...rest }: SelectProps) => {
   return (
     <select
       className={cls(
@@ -19,9 +16,7 @@ export const Select = ({ options, className, ...rest }: SelectProps) => {
       )}
       {...rest}
     >
-      {options.map(({ key, value }: IOption) => (
-        <option value={key}>{value}</option>
-      ))}
+      {children}
     </select>
   );
 };
