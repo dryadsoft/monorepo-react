@@ -1,4 +1,5 @@
 export enum Shadow {
+  none = "shadow-none",
   sm = "shadow-sm",
   md = "shadow-md",
   lg = "shadow-lg",
@@ -6,6 +7,7 @@ export enum Shadow {
 export enum TextSize {
   xs = "text-xs",
   sm = "text-sm",
+  base = "text-base",
   md = "text-md",
   lg = "text-lg",
 }
@@ -46,4 +48,21 @@ export enum JustifyContent {
   end = "justify-end",
   around = "justify-around",
   between = "justify-between",
+}
+export enum AlignItems {
+  start = "items-start",
+  center = "items-center",
+  end = "items-end",
+}
+
+export enum FlexBgColor {
+  transparent = "bg-transparent",
+  white = "bg-white",
+  gray = "bg-gray-200",
+}
+export enum Position {
+  relative = "relative",
+  absolute = "absolute",
+  static = "static",
+  sticky = "sticky",
 }
