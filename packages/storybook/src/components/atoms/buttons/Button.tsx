@@ -65,7 +65,7 @@ export const Button: React.FC<IButtonProps> = ({
   return (
     <button
       type="button"
-      className={`${cls(
+      className={cls(
         "py-2 px-4 tracking-wide font-medium transition-colors focus:outline-none box-border border",
         ButtonLabelColor[labelColor],
         ButtonBgColor[bgColor],
@@ -75,7 +75,7 @@ export const Button: React.FC<IButtonProps> = ({
         Rounded[rounded],
         borderColor,
         className!,
-      )}`}
+      )}
       {...rest}
     >
       {isLoading ? "Loading..." : label}

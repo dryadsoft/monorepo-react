@@ -17,13 +17,12 @@ export const Label = ({
 }: LabelProps) => {
   return (
     <label
-      className={`${cls(
+      className={cls(
         "px-2 py-1 tracking-wide text-gray-600",
         TextSize[textSize],
         Rounded[rounded],
         className!,
       )}
-    `}
       {...rest}
     >
       {label}

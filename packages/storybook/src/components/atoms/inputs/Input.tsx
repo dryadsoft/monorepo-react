@@ -17,12 +17,12 @@ export const Input = ({
 }: InputProps) => {
   return (
     <input
-      className={`${cls(
+      className={cls(
         `w-full p-2 tracking-wider text-input-primary transition-colors border hover:border-input-border-hover focus:border-input-border-focus focus:outline-none`,
         Rounded[rounded],
         PlaceholderSize[placeholderSize],
         className!,
-      )}`}
+      )}
       placeholder={placeholder}
       {...rest}
     />

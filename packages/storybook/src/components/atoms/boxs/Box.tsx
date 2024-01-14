@@ -8,9 +8,7 @@ interface BoxProps {
 }
 export const Box = ({ rounded = "md", shadow = "sm", children }: BoxProps) => {
   return (
-    <div
-      className={`${cls("px-2 py-1 border", Rounded[rounded], Shadow[shadow])}`}
-    >
+    <div className={cls("px-2 py-1 border", Rounded[rounded], Shadow[shadow])}>
       {children}
     </div>
   );
