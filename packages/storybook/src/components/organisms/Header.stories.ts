@@ -1,21 +1,20 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Layout } from "./Layout";
+import { Header } from "./Header";
 
 const meta = {
-  title: "atoms/Layout",
-  component: Layout,
+  title: "organisms/Header",
+  component: Header,
   parameters: {
     layout: "fullscreen",
   },
   tags: ["autodocs"],
   argTypes: {},
-} satisfies Meta<typeof Layout>;
+} satisfies Meta<typeof Header>;
 
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 
-export const FullLayout: Story = {
-  args: {
-    className: "bg-red-100",
-  },
+export const LoggedIn: Story = {
+  args: {},
 };

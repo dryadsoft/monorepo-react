@@ -1,6 +1,6 @@
 import { Flex } from "../atoms/flex/Flex";
 import { Icons } from "../atoms/icons/Icons";
-import { SelectBox } from "./SelectBox";
+import { SelectBox } from "../molecules/SelectBox";
 
 export const Header = () => {
   return (

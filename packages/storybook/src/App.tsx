@@ -1,17 +1,18 @@
-import { Button } from "./components/atoms/buttons/Button";
+import { Layout } from "./components/atoms/layout/Layout";
+import { Footer } from "./components/molecules/Footer";
+import { Header } from "./components/organisms/Header";
 
 function App() {
   return (
-    <div className="text-red-400">
-      <Button
-        bgColor="primary"
-        bgHover="primary"
-        label="primary"
-        labelColor="primary"
-        labelSize="lg"
-        rounded="md"
-      />
-    </div>
+    <Layout>
+      <Header />
+      <main className="mb-16 overflow-y-auto bg-green-400 scrollbar-hide">
+        <div className="h-20 bg-green-400">sas</div>
+      </main>
+      <Footer position="absolute">
+        © 2023 LINK MEDIA. All rights reserved.
+      </Footer>
+    </Layout>
   );
 }
 

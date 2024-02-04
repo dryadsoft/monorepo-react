@@ -11,6 +11,7 @@
   },
   "scripts": {
     "start:storybook": "yarn workspace storybook storybook",
-    "start:client": "yarn workspace storybook dev"
+    "start:client": "yarn workspace storybook dev",
+    "start:ostar": "yarn workspace ostar-schedule dev"
   }
 }
